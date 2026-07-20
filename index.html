@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Portfólio de trabalhos como maper: mapas, análises geográficas e visualizações de dados."
+      content="Portfólio de Eduardo Gaier, mapper e spriter para OTServ, com trabalhos em Tibia clássico, Naruto OT, Pokémon OT e servidores customizados."
     />
-    <meta name="theme-color" content="#0f766e" />
-    <title>Meu Portfólio | Maper</title>
+    <meta name="theme-color" content="#1a4f43" />
+    <title>Eduardo Gaier | Mapper & Spriter OTServ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -20,138 +20,255 @@
   <body>
     <header class="site-header">
       <a class="logo" href="#inicio" aria-label="Voltar para o início">
-        <span class="logo-mark" aria-hidden="true"></span>
-        <span>Maper</span>
+        <span class="logo-mark" aria-hidden="true">EG</span>
+        <span>Eduardo Gaier</span>
       </a>
 
       <nav class="nav" aria-label="Navegação principal">
         <a href="#trabalhos">Trabalhos</a>
-        <a href="#sobre">Sobre</a>
+        <a href="#rme">RME e ferramentas</a>
         <a href="#contato">Contato</a>
       </nav>
     </header>
 
     <main>
       <section class="hero" id="inicio">
+        <div class="hero-media">
+          <img src="images/tavern.png" alt="Mapa interno medieval criado para OTServ" />
+        </div>
+
         <div class="hero-content">
-          <p class="eyebrow">Portfólio de maper</p>
-          <h1>Mapas claros para transformar dados em decisão.</h1>
+          <p class="eyebrow">Mapper e spriter para OTServ</p>
+          <h1>Mapas criativos, jogáveis e com identidade própria.</h1>
           <p class="hero-copy">
-            Reúno aqui projetos de mapeamento, análise territorial e visualização
-            geográfica feitos para deixar informações complexas fáceis de entender.
+            Olá, meu nome é Eduardo Gaier e sou apaixonado pela criação de mapas
+            e conteúdos visuais para servidores OTServ.
           </p>
           <div class="hero-actions" aria-label="Ações principais">
             <a class="button primary" href="#trabalhos">Ver trabalhos</a>
             <a class="button secondary" href="#contato">Falar comigo</a>
           </div>
         </div>
+      </section>
 
-        <div class="map-preview" aria-label="Visual decorativo de mapa">
-          <div class="map-grid"></div>
-          <span class="pin pin-a"></span>
-          <span class="pin pin-b"></span>
-          <span class="pin pin-c"></span>
-          <div class="route route-one"></div>
-          <div class="route route-two"></div>
-          <div class="map-card">
-            <strong>+24</strong>
-            <span>camadas analisadas</span>
-          </div>
+      <section class="intro section-band" aria-labelledby="sobre-title">
+        <div>
+          <p class="eyebrow">Experiência</p>
+          <h2 id="sobre-title">Construção de mapas exclusivos para diferentes estilos.</h2>
+        </div>
+        <div class="intro-grid">
+          <article>
+            <span>01</span>
+            <h3>Tibia clássico</h3>
+            <p>Ambientes medievais, caves, cidades, áreas de caça e interiores.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Naruto OT</h3>
+            <p>Vilas, arenas, templos e cenários inspirados em universos ninja.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Pokémon OT</h3>
+            <p>Rotas, cidades, áreas temáticas e espaços de exploração.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Customizados</h3>
+            <p>Servidores derivados com identidade própria e visual exclusivo.</p>
+          </article>
         </div>
       </section>
 
-      <section class="section" id="trabalhos">
+      <section class="works section-band" id="trabalhos" aria-labelledby="trabalhos-title">
         <div class="section-heading">
-          <p class="eyebrow">Projetos</p>
-          <h2>Trabalhos em destaque</h2>
+          <p class="eyebrow">Trabalhos realizados</p>
+          <h2 id="trabalhos-title">Galeria por projeto</h2>
           <p>
-            Substitua estes exemplos pelos seus projetos reais, imagens, links e
-            resultados quando quiser deixar o portfólio completo.
+            Use os botões para escolher um trabalho, navegue pelas setas e clique
+            em qualquer imagem para ampliar.
           </p>
         </div>
 
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-topline">
-              <span>Mapa interativo</span>
-              <strong>01</strong>
+        <div class="work-tabs" role="tablist" aria-label="Selecionar trabalho">
+          <button class="work-tab active" type="button" role="tab" aria-selected="true" data-work="elfen">
+            Elfen Server
+          </button>
+          <button class="work-tab" type="button" role="tab" aria-selected="false" data-work="narutibia">
+            Narutibia
+          </button>
+          <button class="work-tab" type="button" role="tab" aria-selected="false" data-work="tavern">
+            The Tavern
+          </button>
+          <button class="work-tab" type="button" role="tab" aria-selected="false" data-work="nordot">
+            NordOT
+          </button>
+          <button class="work-tab" type="button" role="tab" aria-selected="false" data-work="middleearth">
+            MiddleEarth
+          </button>
+          <button class="work-tab" type="button" role="tab" aria-selected="false" data-work="split">
+            Naruto Split
+          </button>
+        </div>
+
+        <div class="work-panels">
+          <article class="work-panel active" id="work-elfen" data-work-panel="elfen">
+            <div class="work-copy">
+              <span>Projeto</span>
+              <h3>Elfen Server</h3>
+              <p>Áreas internas, construções, biblioteca, armazéns e composições de cidade.</p>
             </div>
-            <h3>Rotas e pontos de interesse</h3>
-            <p>
-              Organização de camadas, marcações e rotas para facilitar leitura
-              territorial e navegação por dados.
-            </p>
-            <a href="#contato" aria-label="Pedir detalhes sobre Rotas e pontos de interesse">
-              Ver detalhes
-            </a>
+            <div class="carousel" data-carousel>
+              <button class="carousel-arrow prev" type="button" aria-label="Imagem anterior">‹</button>
+              <div class="carousel-track">
+                <button class="gallery-image" type="button"><img src="images/Elfen%20server.jpg" alt="Área de cidade no Elfen Server" /></button>
+                <button class="gallery-image" type="button"><img src="images/armadosdsd.png" alt="Interior com detalhes de armazém" /></button>
+                <button class="gallery-image" type="button"><img src="images/armaria.png" alt="Construções e área urbana do Elfen Server" /></button>
+                <button class="gallery-image" type="button"><img src="images/biblioteca%202.png" alt="Biblioteca circular do Elfen Server" /></button>
+                <button class="gallery-image" type="button"><img src="images/dp1.png" alt="Interior de construção com mobília" /></button>
+                <button class="gallery-image" type="button"><img src="images/dp2.png" alt="Telhado e estrutura externa de construção" /></button>
+              </div>
+              <button class="carousel-arrow next" type="button" aria-label="Próxima imagem">›</button>
+            </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-topline">
-              <span>Análise espacial</span>
-              <strong>02</strong>
+          <article class="work-panel" id="work-narutibia" data-work-panel="narutibia">
+            <div class="work-copy">
+              <span>Projeto</span>
+              <h3>Narutibia</h3>
+              <p>Templos, áreas arenosas, vilas e sprites simples para composição visual.</p>
             </div>
-            <h3>Levantamento por região</h3>
-            <p>
-              Comparação de áreas, densidade, cobertura e padrões para apoiar
-              decisões com base em localização.
-            </p>
-            <a href="#contato" aria-label="Pedir detalhes sobre Levantamento por região">
-              Ver detalhes
-            </a>
+            <div class="carousel" data-carousel>
+              <button class="carousel-arrow prev" type="button" aria-label="Imagem anterior">‹</button>
+              <div class="carousel-track">
+                <button class="gallery-image" type="button"><img src="images/HOKAGUES.jpg" alt="Mapa de vila com monumento em área arenosa" /></button>
+                <button class="gallery-image" type="button"><img src="images/HOJESDS.jpg" alt="Sprite circular com variação visual" /></button>
+                <button class="gallery-image" type="button"><img src="images/ASDASD.png" alt="Sprite circular visto em diferentes escalas" /></button>
+              </div>
+              <button class="carousel-arrow next" type="button" aria-label="Próxima imagem">›</button>
+            </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-topline">
-              <span>Dashboard</span>
-              <strong>03</strong>
+          <article class="work-panel" id="work-tavern" data-work-panel="tavern">
+            <div class="work-copy">
+              <span>Projeto</span>
+              <h3>The Tavern Online</h3>
+              <p>Tavernas, docas, áreas congeladas e interiores com atmosfera medieval.</p>
             </div>
-            <h3>Indicadores no mapa</h3>
-            <p>
-              Visualização de métricas por território com filtros simples,
-              leitura rápida e apresentação objetiva.
-            </p>
-            <a href="#contato" aria-label="Pedir detalhes sobre Indicadores no mapa">
-              Ver detalhes
-            </a>
+            <div class="carousel" data-carousel>
+              <button class="carousel-arrow prev" type="button" aria-label="Imagem anterior">‹</button>
+              <div class="carousel-track">
+                <button class="gallery-image" type="button"><img src="images/tavern.png" alt="Interior de taverna medieval" /></button>
+                <button class="gallery-image" type="button"><img src="images/tavern%202.png" alt="Docas e barco em área de taverna" /></button>
+                <button class="gallery-image" type="button"><img src="images/tavernbarco.png" alt="Área costeira com barco e píer" /></button>
+                <button class="gallery-image" type="button"><img src="images/taverngelo.png" alt="Mapa congelado com elementos de gelo" /></button>
+                <button class="gallery-image" type="button"><img src="images/sala%20de%20eventos.png" alt="Sala de eventos com cenário nevado" /></button>
+              </div>
+              <button class="carousel-arrow next" type="button" aria-label="Próxima imagem">›</button>
+            </div>
+          </article>
+
+          <article class="work-panel" id="work-nordot" data-work-panel="nordot">
+            <div class="work-copy">
+              <span>Projeto</span>
+              <h3>NordOT</h3>
+              <p>Minas, cavernas, áreas de minério e espaços subterrâneos para exploração.</p>
+            </div>
+            <div class="carousel" data-carousel>
+              <button class="carousel-arrow prev" type="button" aria-label="Imagem anterior">‹</button>
+              <div class="carousel-track">
+                <button class="gallery-image" type="button"><img src="images/mina.png" alt="Área de mina com cenário rochoso e neve" /></button>
+                <button class="gallery-image" type="button"><img src="images/minerios1.png" alt="Entrada de mina com minérios ao redor" /></button>
+                <button class="gallery-image" type="button"><img src="images/minerios%202.png" alt="Interior de mina com pontos de minério" /></button>
+              </div>
+              <button class="carousel-arrow next" type="button" aria-label="Próxima imagem">›</button>
+            </div>
+          </article>
+
+          <article class="work-panel" id="work-middleearth" data-work-panel="middleearth">
+            <div class="work-copy">
+              <span>Projeto</span>
+              <h3>MiddleEarth</h3>
+              <p>Templos, montanhas, áreas externas e ambientes de fantasia customizados.</p>
+            </div>
+            <div class="carousel" data-carousel>
+              <button class="carousel-arrow prev" type="button" aria-label="Imagem anterior">‹</button>
+              <div class="carousel-track">
+                <button class="gallery-image" type="button"><img src="images/templo4.png" alt="Templo circular em ambiente de fantasia" /></button>
+                <button class="gallery-image" type="button"><img src="images/asd33re.png" alt="Área externa com montanhas nevadas" /></button>
+              </div>
+              <button class="carousel-arrow next" type="button" aria-label="Próxima imagem">›</button>
+            </div>
+          </article>
+
+          <article class="work-panel" id="work-split" data-work-panel="split">
+            <div class="work-copy">
+              <span>Projeto</span>
+              <h3>Naruto Split</h3>
+              <p>Mapas temáticos, construções e áreas de evento para servidores inspirados em Naruto.</p>
+            </div>
+            <div class="carousel" data-carousel>
+              <button class="carousel-arrow prev" type="button" aria-label="Imagem anterior">‹</button>
+              <div class="carousel-track">
+                <button class="gallery-image" type="button"><img src="images/HOKAGUES.jpg" alt="Vila temática de Naruto Split" /></button>
+                <button class="gallery-image" type="button"><img src="images/ASDASD.png" alt="Sprite temático para Naruto Split" /></button>
+                <button class="gallery-image" type="button"><img src="images/sala%20de%20eventos.png" alt="Área de evento temática" /></button>
+              </div>
+              <button class="carousel-arrow next" type="button" aria-label="Próxima imagem">›</button>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="about" id="sobre">
+      <section class="tools section-band" id="rme" aria-labelledby="rme-title">
         <div>
-          <p class="eyebrow">Sobre</p>
-          <h2>Meu foco é criar mapas úteis, bonitos e fáceis de usar.</h2>
+          <p class="eyebrow">RME e ferramentas</p>
+          <h2 id="rme-title">Mapping, acabamento visual e sprites simples.</h2>
         </div>
-        <p>
-          Trabalho com organização de dados geográficos, construção de mapas,
-          leitura de território e apresentação visual de informações. Este site é
-          uma base simples para você publicar agora e ir evoluindo com seus
-          projetos reais.
-        </p>
+        <div class="tool-list">
+          <article>
+            <h3>Remere's Map Editor</h3>
+            <p>Criação, edição e refinamento de mapas para servidores OTServ.</p>
+          </article>
+          <article>
+            <h3>Sprites simples</h3>
+            <p>Árvores, montanhas, pisos e itens para complementar a identidade do servidor.</p>
+          </article>
+          <article>
+            <h3>Projetos customizados</h3>
+            <p>The Tavern Online, Elfen Server, NordOT, Naruto Split, DBO, MiddleEarth, PokeWish e outros.</p>
+          </article>
+        </div>
       </section>
 
-      <section class="contact" id="contato">
+      <section class="contact section-band" id="contato" aria-labelledby="contato-title">
         <div>
           <p class="eyebrow">Contato</p>
-          <h2>Vamos conversar sobre um projeto?</h2>
-          <p>Troque os links abaixo pelos seus contatos reais.</p>
+          <h2 id="contato-title">Vamos conversar sobre seu servidor?</h2>
+          <p>
+            Meu foco é entregar mapas criativos, jogáveis e visualmente atraentes,
+            ajudando cada servidor a ter uma identidade única.
+          </p>
         </div>
 
-        <div class="contact-actions">
-          <a class="button primary" href="mailto:seuemail@exemplo.com">Enviar email</a>
-          <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-          <a class="button secondary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
-            LinkedIn
+        <div class="contact-actions" aria-label="Contatos">
+          <a class="button primary" href="mailto:eduardogaier@gmail.com">eduardogaier@gmail.com</a>
+          <a class="button secondary" href="https://wa.me/5555991773439" target="_blank" rel="noreferrer">
+            WhatsApp
           </a>
         </div>
       </section>
     </main>
 
+    <div class="lightbox" aria-hidden="true" role="dialog" aria-label="Visualização da imagem">
+      <button class="lightbox-close" type="button" aria-label="Fechar imagem">×</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="Imagem anterior">‹</button>
+      <img src="" alt="" />
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Próxima imagem">›</button>
+    </div>
+
     <footer class="site-footer">
-      <span>© <span id="year"></span> Maper. Todos os direitos reservados.</span>
+      <span>© <span id="year"></span> Eduardo Gaier. Todos os direitos reservados.</span>
       <a href="#inicio">Voltar ao topo</a>
     </footer>
 

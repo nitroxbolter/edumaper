@@ -477,7 +477,23 @@ h3 {
 }
 
 .rme-carousel .carousel-track {
-  grid-auto-columns: minmax(78%, 1fr);
+  grid-auto-columns: clamp(240px, 31vw, 430px);
+  align-items: start;
+}
+
+.rme-carousel .gallery-image {
+  height: auto;
+  aspect-ratio: 1323 / 885;
+}
+
+.rme-carousel .gallery-image.titled img {
+  height: calc(100% - 46px);
+}
+
+.rme-carousel .gallery-caption {
+  min-height: 46px;
+  padding: 12px 14px;
+  font-size: 0.86rem;
 }
 
 .contact {
@@ -618,7 +634,7 @@ h3 {
   }
 
   .rme-carousel .carousel-track {
-    grid-auto-columns: 100%;
+    grid-auto-columns: 86%;
   }
 
   .carousel-arrow {

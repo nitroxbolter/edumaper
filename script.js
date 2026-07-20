@@ -41,7 +41,7 @@ document.querySelectorAll("[data-carousel]").forEach((carousel) => {
 
 document.querySelectorAll(".gallery-image").forEach((button) => {
   button.addEventListener("click", () => {
-    const panel = button.closest("[data-work-panel]");
+    const panel = button.closest("[data-work-panel]") || button.closest("[data-carousel]") || document;
     const images = [...panel.querySelectorAll(".gallery-image img")];
     const selectedImage = button.querySelector("img");
 

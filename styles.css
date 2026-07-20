@@ -193,6 +193,8 @@ h3 {
 .hero-copy,
 .section-heading p,
 .intro p,
+.intro-lead,
+.craft-list p,
 .work-copy p,
 .tools p,
 .contact p {
@@ -250,6 +252,7 @@ h3 {
   gap: 34px;
 }
 
+.craft-list,
 .intro-grid,
 .tool-list {
   display: grid;
@@ -257,6 +260,7 @@ h3 {
   gap: 14px;
 }
 
+.craft-list article,
 .intro article,
 .tool-list article {
   min-height: 190px;
@@ -264,6 +268,21 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(26, 29, 23, 0.72);
+}
+
+.craft-list article {
+  position: relative;
+  overflow: hidden;
+}
+
+.craft-list article::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--brand), var(--accent));
 }
 
 .intro article span {
@@ -363,6 +382,7 @@ h3 {
 }
 
 .gallery-image {
+  position: relative;
   display: block;
   width: 100%;
   min-height: 350px;
@@ -380,6 +400,27 @@ h3 {
   min-height: 350px;
   object-fit: cover;
   transition: transform 180ms ease, filter 180ms ease;
+}
+
+.gallery-image.titled img {
+  padding-bottom: 54px;
+  background: #151812;
+  object-fit: contain;
+}
+
+.gallery-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 54px;
+  padding: 14px 16px;
+  border-top: 1px solid rgba(244, 241, 232, 0.14);
+  background: rgba(12, 14, 11, 0.94);
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 900;
+  text-align: left;
 }
 
 .gallery-image:hover img,
@@ -433,6 +474,10 @@ h3 {
   display: grid;
   grid-template-columns: minmax(0, 0.76fr) minmax(320px, 1fr);
   gap: 34px;
+}
+
+.rme-carousel .carousel-track {
+  grid-auto-columns: minmax(78%, 1fr);
 }
 
 .contact {
@@ -558,6 +603,7 @@ h3 {
     width: min(100% - 24px, 1180px);
   }
 
+  .craft-list,
   .intro-grid,
   .tool-list {
     grid-template-columns: 1fr;
@@ -570,6 +616,10 @@ h3 {
   .carousel-track {
     grid-auto-columns: 100%;
     padding: 12px;
+  }
+
+  .rme-carousel .carousel-track {
+    grid-auto-columns: 100%;
   }
 
   .carousel-arrow {

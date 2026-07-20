@@ -197,6 +197,8 @@ h3 {
 .craft-list p,
 .work-copy p,
 .tools p,
+.testimonial-card p,
+.testimonial-card span,
 .contact p {
   color: var(--muted);
 }
@@ -496,6 +498,51 @@ h3 {
   font-size: 0.86rem;
 }
 
+.testimonials {
+  position: relative;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.testimonial-card {
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(217, 164, 65, 0.08), transparent 42%),
+    rgba(26, 29, 23, 0.78);
+}
+
+.testimonial-card p {
+  margin-bottom: 0;
+  font-size: 1.02rem;
+}
+
+.testimonial-card strong,
+.testimonial-card span {
+  display: block;
+}
+
+.testimonial-card strong {
+  color: var(--text);
+  font-size: 0.98rem;
+}
+
+.testimonial-card span {
+  margin-top: 4px;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
 .contact {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(280px, 1fr);
@@ -607,6 +654,14 @@ h3 {
 
   .gallery-image {
     height: 300px;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    min-height: auto;
   }
 }
 

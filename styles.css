@@ -384,8 +384,8 @@ main > .tool-menu:first-child {
 
 .split-copy {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.72fr);
-  gap: 28px;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(320px, 1fr);
+  gap: 42px;
   align-items: start;
 }
 
@@ -397,6 +397,16 @@ main > .tool-menu:first-child {
 .split-copy h2,
 .split-copy .intro-lead {
   margin-bottom: 0;
+}
+
+.split-copy h2 {
+  font-size: clamp(1.9rem, 2.9vw, 3rem);
+  line-height: 1.05;
+}
+
+.split-copy .intro-lead {
+  max-width: 560px;
+  font-size: 1.02rem;
 }
 
 .stats-grid {

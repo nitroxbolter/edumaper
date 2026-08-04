@@ -151,6 +151,41 @@ button {
   object-fit: cover;
 }
 
+.rme-hero {
+  grid-template-columns: minmax(0, 1.12fr) minmax(300px, 0.72fr);
+  min-height: auto;
+  margin-top: 46px;
+  padding: 34px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(217, 164, 65, 0.1), transparent 46%),
+    rgba(26, 29, 23, 0.68);
+  box-shadow: var(--shadow);
+}
+
+.rme-hero .hero-media {
+  box-shadow: none;
+}
+
+.rme-hero .hero-media img {
+  height: clamp(260px, 35vw, 460px);
+}
+
+.rme-hero .hero-content {
+  max-width: 520px;
+}
+
+.rme-hero h1 {
+  font-size: clamp(2.8rem, 5.2vw, 5rem);
+}
+
+.rme-hero .hero-copy {
+  max-width: 500px;
+  margin-bottom: 24px;
+  font-size: 1rem;
+}
+
 .hero-content {
   max-width: 640px;
 }
@@ -754,6 +789,18 @@ h3 {
 
   .hero-media {
     order: 2;
+  }
+
+  .rme-hero {
+    padding: 22px;
+  }
+
+  .rme-hero .hero-media {
+    order: 0;
+  }
+
+  .rme-hero .hero-media img {
+    height: clamp(230px, 54vw, 360px);
   }
 
   .carousel {

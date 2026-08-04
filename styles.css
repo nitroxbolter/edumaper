@@ -184,6 +184,10 @@ button {
   font-size: 1rem;
 }
 
+.tool-hero h1 {
+  font-size: clamp(2.5rem, 5.4vw, 5.1rem);
+}
+
 .hero-content {
   max-width: 640px;
 }
@@ -284,6 +288,11 @@ h3 {
 
 .compact-band {
   padding: 34px 0;
+}
+
+main > .tool-menu:first-child {
+  border-top: 0;
+  padding-top: 24px;
 }
 
 .tool-menu {

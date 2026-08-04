@@ -161,8 +161,9 @@ button {
   position: relative;
   isolation: isolate;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
-  min-height: auto;
+  min-height: clamp(520px, 48vw, 610px);
   margin-top: 46px;
   padding: 34px;
   border: 1px solid var(--line);
@@ -173,14 +174,14 @@ button {
 .rme-hero {
   background:
     linear-gradient(90deg, rgba(17, 19, 15, 0.28), rgba(17, 19, 15, 0.94) 58%),
-    url("images/ferramentas/ferramentas.png") left center / cover no-repeat,
+    url("images/rme/rmeintro.png") left center / cover no-repeat,
     rgba(26, 29, 23, 0.68);
 }
 
 .tool-hero {
   background:
     linear-gradient(90deg, rgba(17, 19, 15, 0.2), rgba(17, 19, 15, 0.95) 58%),
-    url("images/ferramentas/Fotos library/packlibrary-main.png") left center / cover no-repeat,
+    url("images/ferramentas/ferramentas.png") left center / cover no-repeat,
     rgba(26, 29, 23, 0.68);
 }
 
@@ -190,24 +191,15 @@ button {
   padding: clamp(20px, 3vw, 42px) 0;
 }
 
-.rme-hero h1 {
+.rme-hero h1,
+.tool-hero h1 {
   font-size: clamp(2.35rem, 4.2vw, 4rem);
   line-height: 0.98;
 }
 
-.rme-hero .hero-copy {
-  max-width: 500px;
-  margin-bottom: 24px;
-  font-size: 1rem;
-}
-
-.tool-hero h1 {
-  font-size: clamp(2.35rem, 4.6vw, 4.35rem);
-  line-height: 0.98;
-}
-
+.rme-hero .hero-copy,
 .tool-hero .hero-copy {
-  max-width: 520px;
+  max-width: 500px;
   margin-bottom: 24px;
   font-size: 1rem;
 }
@@ -831,14 +823,14 @@ main > .tool-menu:first-child {
   .rme-hero {
     background:
       linear-gradient(180deg, rgba(17, 19, 15, 0.44), rgba(17, 19, 15, 0.92) 56%),
-      url("images/ferramentas/ferramentas.png") center top / cover no-repeat,
+      url("images/rme/rmeintro.png") center top / cover no-repeat,
       rgba(26, 29, 23, 0.68);
   }
 
   .tool-hero {
     background:
       linear-gradient(180deg, rgba(17, 19, 15, 0.44), rgba(17, 19, 15, 0.92) 56%),
-      url("images/ferramentas/Fotos library/packlibrary-main.png") center top / cover no-repeat,
+      url("images/ferramentas/ferramentas.png") center top / cover no-repeat,
       rgba(26, 29, 23, 0.68);
   }
 

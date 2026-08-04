@@ -152,32 +152,30 @@ button {
 }
 
 .rme-hero {
-  grid-template-columns: minmax(0, 1.12fr) minmax(300px, 0.72fr);
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  justify-content: flex-end;
   min-height: auto;
   margin-top: 46px;
   padding: 34px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background:
-    linear-gradient(135deg, rgba(217, 164, 65, 0.1), transparent 46%),
+    linear-gradient(90deg, rgba(17, 19, 15, 0.28), rgba(17, 19, 15, 0.94) 58%),
+    url("images/ferramentas/ferramentas.png") left center / cover no-repeat,
     rgba(26, 29, 23, 0.68);
   box-shadow: var(--shadow);
 }
 
-.rme-hero .hero-media {
-  box-shadow: none;
-}
-
-.rme-hero .hero-media img {
-  height: clamp(260px, 35vw, 460px);
-}
-
 .rme-hero .hero-content {
   max-width: 520px;
+  padding: clamp(20px, 3vw, 42px) 0;
 }
 
 .rme-hero h1 {
-  font-size: clamp(2.8rem, 5.2vw, 5rem);
+  font-size: clamp(2.35rem, 4.2vw, 4rem);
+  line-height: 0.98;
 }
 
 .rme-hero .hero-copy {
@@ -792,15 +790,16 @@ h3 {
   }
 
   .rme-hero {
+    display: grid;
     padding: 22px;
+    background:
+      linear-gradient(180deg, rgba(17, 19, 15, 0.44), rgba(17, 19, 15, 0.92) 56%),
+      url("images/ferramentas/ferramentas.png") center top / cover no-repeat,
+      rgba(26, 29, 23, 0.68);
   }
 
-  .rme-hero .hero-media {
-    order: 0;
-  }
-
-  .rme-hero .hero-media img {
-    height: clamp(230px, 54vw, 360px);
+  .rme-hero .hero-content {
+    padding-top: clamp(170px, 40vw, 280px);
   }
 
   .carousel {

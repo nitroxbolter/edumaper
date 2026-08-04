@@ -115,7 +115,8 @@ button {
 }
 
 .nav a:hover,
-.nav a:focus-visible {
+.nav a:focus-visible,
+.nav a[aria-current="page"] {
   background: var(--surface-soft);
   color: var(--text);
 }
@@ -248,6 +249,52 @@ h3 {
   border-top: 1px solid var(--line);
 }
 
+.compact-band {
+  padding: 34px 0;
+}
+
+.tool-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.tool-menu h2 {
+  margin-bottom: 0;
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+}
+
+.tool-switch {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(12, 14, 11, 0.62);
+}
+
+.tool-switch a {
+  flex: 0 0 auto;
+  min-width: 150px;
+  padding: 10px 14px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--muted);
+  font-weight: 900;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tool-switch a:hover,
+.tool-switch a:focus-visible,
+.tool-switch a.active {
+  border-color: rgba(217, 164, 65, 0.58);
+  background: rgba(217, 164, 65, 0.14);
+  color: var(--text);
+}
+
 .intro {
   display: grid;
   grid-template-columns: minmax(0, 0.72fr) minmax(320px, 1fr);
@@ -260,6 +307,57 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
+}
+
+.feature-strip {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(320px, 1fr);
+  gap: 34px;
+  align-items: start;
+}
+
+.feature-strip > .section-heading {
+  margin-bottom: 0;
+}
+
+.feature-strip > .craft-list {
+  grid-column: 1 / -1;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.stats-grid article {
+  min-height: 138px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(112, 163, 109, 0.15), transparent 54%),
+    rgba(26, 29, 23, 0.78);
+}
+
+.stats-grid strong,
+.stats-grid span {
+  display: block;
+}
+
+.stats-grid strong {
+  color: var(--text);
+  font-size: clamp(1.55rem, 3vw, 2.35rem);
+  line-height: 1;
+}
+
+.stats-grid span {
+  margin-top: 10px;
+  color: var(--brand);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
 }
 
 .craft-list article,
@@ -634,9 +732,19 @@ h3 {
   .hero,
   .intro,
   .tools,
+  .feature-strip,
   .contact,
   .work-panel.active {
     grid-template-columns: 1fr;
+  }
+
+  .tool-menu {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .tool-switch {
+    width: 100%;
   }
 
   .hero {
@@ -675,7 +783,8 @@ h3 {
 
   .craft-list,
   .intro-grid,
-  .tool-list {
+  .tool-list,
+  .stats-grid {
     grid-template-columns: 1fr;
   }
 

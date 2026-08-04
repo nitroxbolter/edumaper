@@ -156,7 +156,8 @@ button {
   line-height: 0.98;
 }
 
-.rme-hero {
+.rme-hero,
+.tool-hero {
   position: relative;
   isolation: isolate;
   display: flex;
@@ -166,14 +167,25 @@ button {
   padding: 34px;
   border: 1px solid var(--line);
   border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.rme-hero {
   background:
     linear-gradient(90deg, rgba(17, 19, 15, 0.28), rgba(17, 19, 15, 0.94) 58%),
     url("images/ferramentas/ferramentas.png") left center / cover no-repeat,
     rgba(26, 29, 23, 0.68);
-  box-shadow: var(--shadow);
 }
 
-.rme-hero .hero-content {
+.tool-hero {
+  background:
+    linear-gradient(90deg, rgba(17, 19, 15, 0.2), rgba(17, 19, 15, 0.95) 58%),
+    url("images/ferramentas/Fotos library/packlibrary-main.png") left center / cover no-repeat,
+    rgba(26, 29, 23, 0.68);
+}
+
+.rme-hero .hero-content,
+.tool-hero .hero-content {
   max-width: 520px;
   padding: clamp(20px, 3vw, 42px) 0;
 }
@@ -190,7 +202,14 @@ button {
 }
 
 .tool-hero h1 {
-  font-size: clamp(2.5rem, 5.4vw, 5.1rem);
+  font-size: clamp(2.35rem, 4.6vw, 4.35rem);
+  line-height: 0.98;
+}
+
+.tool-hero .hero-copy {
+  max-width: 520px;
+  margin-bottom: 24px;
+  font-size: 1rem;
 }
 
 .hero-content {
@@ -803,16 +822,28 @@ main > .tool-menu:first-child {
     order: 2;
   }
 
-  .rme-hero {
+  .rme-hero,
+  .tool-hero {
     display: grid;
     padding: 22px;
+  }
+
+  .rme-hero {
     background:
       linear-gradient(180deg, rgba(17, 19, 15, 0.44), rgba(17, 19, 15, 0.92) 56%),
       url("images/ferramentas/ferramentas.png") center top / cover no-repeat,
       rgba(26, 29, 23, 0.68);
   }
 
-  .rme-hero .hero-content {
+  .tool-hero {
+    background:
+      linear-gradient(180deg, rgba(17, 19, 15, 0.44), rgba(17, 19, 15, 0.92) 56%),
+      url("images/ferramentas/Fotos library/packlibrary-main.png") center top / cover no-repeat,
+      rgba(26, 29, 23, 0.68);
+  }
+
+  .rme-hero .hero-content,
+  .tool-hero .hero-content {
     padding-top: clamp(170px, 40vw, 280px);
   }
 

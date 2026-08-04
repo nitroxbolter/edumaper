@@ -382,6 +382,23 @@ main > .tool-menu:first-child {
   grid-column: 1 / -1;
 }
 
+.split-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.72fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.split-copy .eyebrow {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+.split-copy h2,
+.split-copy .intro-lead {
+  margin-bottom: 0;
+}
+
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -803,6 +820,10 @@ main > .tool-menu:first-child {
 
   .tool-switch {
     width: 100%;
+  }
+
+  .split-copy {
+    grid-template-columns: 1fr;
   }
 
   .hero {

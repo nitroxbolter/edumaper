@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Conheça as novidades do Map Editor de Eduardo Gaier: atualização automática, integração MCP com Codex, Item Manager e transferência entre mapas."
+    />
+    <meta name="theme-color" content="#1a4f43" />
+    <title>Novidades do Map Editor | Eduardo Gaier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html#inicio" aria-label="Voltar para o início">
+        <span class="logo-mark" aria-hidden="true">EG</span>
+        <span>Eduardo Gaier</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="index.html#trabalhos">Trabalhos</a>
+        <a href="rme.html">Ferramentas</a>
+        <a href="novidades.html" aria-current="page">Novidades</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="news-heading section-band" aria-labelledby="news-title">
+        <p class="eyebrow">Map Editor · versão 10.2.7</p>
+        <h1 id="news-title">Novidades do Map Editor</h1>
+        <p class="news-lead">
+          Uma interface renovada, fluxos de trabalho mais práticos e novas formas
+          de conectar suas ferramentas de criação.
+        </p>
+        <p class="news-date">Atualizado em 19 de outubro de 2026</p>
+      </section>
+
+      <section class="news-entry section-band" aria-labelledby="auto-update-title">
+        <div class="news-image">
+          <img
+            src="images/novidades/atualizacao-automatica.png"
+            alt="Tela do Map Editor verificando e instalando uma atualização automaticamente"
+          />
+        </div>
+        <div class="news-copy">
+          <p class="eyebrow">Atualização automática</p>
+          <h2 id="auto-update-title">Seu editor se mantém atualizado.</h2>
+          <p>
+            Ao iniciar, o Map Editor verifica se há uma nova versão. Quando encontra
+            uma atualização, baixa e instala o pacote, depois abre novamente o editor
+            para você continuar trabalhando.
+          </p>
+          <p>
+            O processo valida os arquivos recebidos e mantém cópias de recuperação
+            para restaurar a instalação se ocorrer uma falha.
+          </p>
+        </div>
+      </section>
+
+      <section class="news-entry section-band" aria-labelledby="region-transfer-title">
+        <div class="news-copy">
+          <p class="eyebrow">Transferência entre mapas · Beta</p>
+          <h2 id="region-transfer-title">Leve regiões para mapas com DAT/SPR diferentes.</h2>
+          <p>
+            Exporte uma área e importe-a em outro mapa. O editor compara os itens,
+            reutiliza os compatíveis, importa os que faltam e converte os IDs para
+            o cliente de destino.
+          </p>
+          <p class="news-notice">
+            Este recurso está em Beta. Faça uma cópia manual de segurança dos arquivos
+            DAT/SPR do mapa de destino antes de importar itens.
+          </p>
+        </div>
+        <div class="news-image">
+          <img
+            src="images/novidades/transferencia-regioes.png"
+            alt="Guia visual em seis etapas para exportar uma região e importá-la em outro mapa"
+          />
+        </div>
+      </section>
+
+      <section class="news-tools section-band" aria-labelledby="news-tools-title">
+        <div class="section-heading">
+          <p class="eyebrow">Mais novidades</p>
+          <h2 id="news-tools-title">Mais controle no seu fluxo de criação.</h2>
+        </div>
+        <div class="craft-list news-feature-list">
+          <article>
+            <h3>MCP para Codex e IA</h3>
+            <p>
+              Conecte clientes compatíveis, como o Codex, ao servidor MCP local do RME
+              para consultar e editar o mapa aberto, criando conteúdo diretamente no
+              editor. A permissão de escrita é controlada nas opções MCP / AI do RME.
+            </p>
+          </article>
+          <article>
+            <h3>Item Manager integrado</h3>
+            <p>
+              Object Builder e Item Editor ficam reunidos no Item Manager. Navegue por
+              itens, outfits, efeitos e sprites do DAT/SPR do projeto, edite objetos e
+              importe ou exporte arquivos OBD e PNG.
+            </p>
+          </article>
+          <article>
+            <h3>Scripts e interface renovados</h3>
+            <p>
+              A janela de scripts agora permite selecionar um script e carregá-lo
+              diretamente. A tela inicial ganhou novo layout e ícones atualizados para
+              as ferramentas do Map Editor.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section-band" aria-labelledby="news-contact-title">
+        <div>
+          <p class="eyebrow">Map Editor</p>
+          <h2 id="news-contact-title">Explore as ferramentas.</h2>
+          <p>Veja mais detalhes do RME Map Editor e do PackLibrary.</p>
+        </div>
+        <div class="contact-actions" aria-label="Páginas de ferramentas">
+          <a class="button primary" href="rme.html">RME Map Editor</a>
+          <a class="button secondary" href="packlibrary.html">PackLibrary</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Eduardo Gaier. Todos os direitos reservados.</span>
+      <a href="#news-title">Voltar ao topo</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
